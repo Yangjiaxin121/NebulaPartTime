@@ -59,28 +59,29 @@ Page({
     },
     "restaurant": [
       {
-        "name": "正新鸡排",
+        "name": "签约艺人",
         "star": 5,
         "sales": 1161,
-        "src": "http://i4.piimg.com/601998/a88338a6d392a569.jpg",
+        "src": "/pages/images/jobs/签约艺人.jpg",
         "initial_price": 20,
         "distribution_price": 0,
         "distance": "1.5km",
+        "content": "网络主播月薪过万",
         "time": 30
       },
       {
-        "name": "板凳烧烤",
+        "name": "网拍模特",
         "star": 4,
         "sales": 330,
-        "src": "http://i4.piimg.com/601998/473847a250bb0186.jpg",
+        "src": "/pages/images/jobs/网拍模特1.jpg",
         "initial_price": 50,
         "distribution_price": 3,
         "distance": "3.3km",
         "time": 56
       },
       {
-        "name": "味多美炸鸡汉堡",
-        "src": "http://i4.piimg.com/601998/a014d6160fd7b504.jpg",
+        "name": "摄影助理",
+        "src": "/pages/images/jobs/摄影助理.jpg",
         "star": 0,
         "sales": 39,
         "initial_price": 35,
@@ -89,18 +90,18 @@ Page({
         "time": 44
       },
       {
-        "name": "精武鸭脖",
+        "name": "迎宾",
         "star": 0,
         "sales": 24,
-        "src": "http://i4.piimg.com/601998/23f361491b45ddf2.jpg",
+        "src": "/pages/images/jobs/迎宾.jpg",
         "initial_price": 30,
         "distribution_price": 1,
         "distance": "2.6km",
         "time": 44
       },
       {
-        "name": "御膳房",
-        "src": "http://i2.kiimg.com/601998/a955867016875a41.jpg",
+        "name": "洗浴服务员",
+        "src": "/pages/images/jobs/洗浴服务员.jpg",
         "star": 4.5,
         "sales": 641,
         "initial_price": 0,

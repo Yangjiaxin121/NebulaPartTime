@@ -35,7 +35,7 @@
   </view>
   <view class='restaurantList'></view>
   <block wx:for="{{restaurant}}" wx:key="">
-    <navigator url="/pages/menu/menu">
+    <navigator url="/pages/menu/menu?content={{item.content}}&src={{item.src}}">
       <view class="restaurants-list">
         <view class="restaurants-info-image">
           <image src="{{item.src}}" class="restaurants-image" />

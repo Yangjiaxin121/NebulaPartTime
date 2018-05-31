@@ -5,14 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    swiperTitle: [{
+      text: "详情",
+      id: 1
+    }, {
+      text: "评价",
+      id: 2
+    }, {
+      text: "商家",
+      id: 3
+    }],
+    menu: [],
+    currentPage: 0,
+    selected: 0,
+    howMuch: 12,
+    cost: 0,
+    pullBar: false,
+    content: "",
+    src:""
+  },
+  turnPage: function (e) {
+    this.setData({
+      currentPage: e.currentTarget.dataset.index
+
+    })
+  },
+  turnTitle: function (e) {
+    if (e.detail.source == "touch") {
+      this.setData({
+        currentPage: e.detail.current
+      })
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      content: options.content,
+      src:options.src
+    })   
   },
 
   /**

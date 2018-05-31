@@ -1,1 +1,36 @@
 /* pages/my/my.wxss */
+page{
+  font-size: 30rpx;
+  background: #ECECEC;
+}
+.container{
+  height: 100%;
+}
+.header{
+  height: 300rpx;
+  background-color: #7a40ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userImg{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius:120rpx;
+  border: 8rpx solid #b040ff; 
+  margin-bottom: 30rpx;
+}
+.content .coupon,.content .signOut,
+.content .address,.content .tel{
+  background: white;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 15rpx; 
+}
+.content .coupon,.content .signOut{ 
+  margin: 15rpx 0;
+}
+.content .signOut{
+  text-align: center;
+}

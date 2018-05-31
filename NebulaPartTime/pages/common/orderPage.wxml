@@ -1,0 +1,15 @@
+<template name="orderPage">
+  <view class='orderHeader'>
+      <image src='{{src}}' class='im'></image>
+  </view>
+  <view class='content'>
+    <view class='circle'></view>
+    <view class=''>{{content}}</view>
+  </view>
+   <view class="footer {{cost!=0?'active':''}}">
+      <view class="howMuch">
+        <view class="free">月薪：8000-15000元/月</view>
+      </view>
+      <view class="pay">立即应聘</view>      
+    </view>
+</template>

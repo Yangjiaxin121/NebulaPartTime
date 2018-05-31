@@ -1,1 +1,154 @@
-/* pages/menu/menu.wxss */
+.container{
+  height: 100%;
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+}
+.header .title{
+  height: 70rpx;
+  width: 180rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.header .title.selected{
+  border-bottom: 7rpx solid #FFd161;
+  font-weight: 600;
+}
+.swiper{
+  height: 1130rpx;
+}
+#orderPage{
+  display: flex;
+  height: auto;
+  background: #ECECEC;
+  flex-direction: column;
+}
+
+#commentPage{
+  height: auto;
+}
+#restaurantPage{
+  display: auto;
+}
+
+.orderHeader{
+  height: 400rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.circle{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius:10rpx;
+  border: 1rpx solid #b040ff; 
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.content{
+  display: flex;
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+}
+.footer{
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom:0;
+  height: 100rpx;
+}
+
+
+#orderPage .howMuch{
+  position: relative;
+  flex: 1;
+  font-size: 32rpx;
+  background: white;
+  line-height: 100rpx;
+  padding-left: 130rpx;
+}
+.footer .pay{
+  width: 200rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: white;
+  font-size: 30rpx;
+  background: #6f40ff;
+}
+#orderPage .cost{
+  margin-top: 10rpx;
+  color: red;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  height: 50rpx;
+  width: 100rpx;
+}
+
+
+.commentPage-header{
+  height: 190rpx;
+  display: flex;
+  padding-bottom: 30rpx;
+  border-bottom: 20rpx solid #F4F4F4; 
+}
+ .commentPage-score{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 55rpx;
+  color: #FFB001;
+  border-right: 1px solid #E8E8E8;
+}
+.commentPage-score .overall{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #9D9D9D
+}
+.commentPage-score .rate{
+  line-height: 50rpx;
+  font-size: 25rpx;
+  color: #E8E8E8;
+}
+.commentPage-rating{
+  padding-top: 20rpx; 
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30rpx;
+  color: #9D9D9D;
+}
+.commentPage-rating .restaurant,.commentPage-rating .distribute{
+  display: flex;
+  width: 450rpx;
+}
+.commentPage-rating .distribute{
+  margin-top:  40rpx;
+}
+.commentPage-rating .stars{
+  margin:0 40rpx;
+}
+.commentPage-category{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 20rpx solid #F4F4F4; 
+}
+.commentPage-category .category-item{
+  height: 40rpx;
+  line-height: 40rpx;
+  margin: 20rpx 10rpx;
+  font-size: 28rpx;
+  color: #9D9D9D;
+  border: 1px solid #ECECEC;
+  border-radius: 40rpx;
+  padding: 5rpx 15rpx;
+}
+

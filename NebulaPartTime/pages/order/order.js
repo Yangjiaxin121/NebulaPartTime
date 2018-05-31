@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    orderList: [{
+      restaurantName: "打字员",
+      state: "订单取消",
+      price: "100",
+      date: "2018-05-30",
+      time: "12:29:12",
+      howToDistribute: "商家"
+    }]
   },
 
   /**
