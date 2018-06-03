@@ -1,0 +1,15 @@
+<template name="merchantsPage">
+  <view class='merchantHeader'>
+      <text>公司简介:</text>
+  </view>
+  <view class='merchantContent'>
+    <view class='circle'></view>
+    <view class=''>{{merchants}}</view>
+  </view>
+     <view class="footer {{cost!=0?'active':''}}">
+      <view class="howMuch">
+        <view class="free">tel：13572115067</view>
+      </view>
+      <view class="pay">联系商家</view>      
+    </view>
+</template>

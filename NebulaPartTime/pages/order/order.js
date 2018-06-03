@@ -6,12 +6,12 @@ Page({
    */
   data: {
     orderList: [{
-      restaurantName: "打字员",
+      restaurantName: "摄影助理",
       state: "订单取消",
-      price: "100",
+      price: "3k",
       date: "2018-05-30",
       time: "12:29:12",
-      howToDistribute: "商家"
+      howToDistribute: "半坡摄影"
     }]
   },
 

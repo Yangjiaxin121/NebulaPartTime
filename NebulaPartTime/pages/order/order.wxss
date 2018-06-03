@@ -25,7 +25,7 @@
 }
 .order-title-state{
   width: 130rpx;
-  color: #D2D2D2;
+  color: #251f84;
   margin-right: 20rpx;
   font-size: 28rpx;
 }
@@ -73,7 +73,9 @@
 }
 .order-footer-orderAgain{
   margin-right: 20rpx;
+  background: #b9daf3;
 }
 .order-footer-goToComment{
-  background: #FFD161;
+  background: #6f40ff;
+  color: white;
 }

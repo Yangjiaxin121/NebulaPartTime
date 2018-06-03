@@ -8,9 +8,9 @@
         <text class="heard-location-text">{{location}}</text>
       </view>
     </navigator>
-    <view class="heard-search">
+    <view class="heard-search" style='color:grey;'>
       <image src="/pages/images/search.png" class="heard-search-icon"/>
-      鸡排
+      服务生
     </view>
   </view>
   <swiper class="categoryList" indicator-dots="true" indicator-color="rgba(228,228,228,1)" indicator-active-color="#FECA49">
@@ -30,12 +30,12 @@
     <view class='sort'>综合排序
       <image src='/pages/images/down.png' style='height:10px; width:10px;'></image>
     </view>
-    <view class='sort'>销量最高</view>
+    <view class='sort'>人气最高</view>
     <view class='sort'>距离最近</view>
   </view>
   <view class='restaurantList'></view>
   <block wx:for="{{restaurant}}" wx:key="">
-    <navigator url="/pages/menu/menu?content={{item.content}}&src={{item.src}}">
+    <navigator url="/pages/menu/menu?salary1={{item.salary1}}&salary2={{item.salary2}}&content1={{item.content1}}&content2={{item.content2}}&content3={{item.content3}}&comment1={{item.comment1}}&comment2={{item.comment2}}&comment3={{item.comment3}}&src={{item.src}}&merchants={{item.merchants}}">
       <view class="restaurants-list">
         <view class="restaurants-info-image">
           <image src="{{item.src}}" class="restaurants-image" />
@@ -44,10 +44,10 @@
           <view class="restaurants-info-name">{{item.name}}</view>
           <view class="restaurants-info-rating">
             <view class="restaurants-info-rating-stars">★ ★ ★ ★</view>
-            <view class="restaurants-info-rating-sales">月售 {{item.sales}}单</view>
+            <view class="restaurants-info-rating-sales">月薪 {{item.salary1}}~{{item.salary2}}</view>
           </view>
           <view class="restaurants-info-price">
-            起送 {{item.initial_price}}¥ | 配送 {{item.distribution_price}}¥
+            {{item.introduction1}} | {{item.introduction2}}
           </view>
         </view>
         <view class="restaurants-distribution">

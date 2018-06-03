@@ -6,17 +6,31 @@
     <view class="rate">商家综合好评率为76%</view>
   </view>
   <view class="commentPage-rating">
-    <view class="restaurant">商家评分
-      <view class="stars">★★★★★ 4</view>
-    </view>
-    <view class="distribute">配送评分
+     <view class="restaurant">用户评分
+      <view class="stars">★★★★★ 4.3</view>
+    </view> 
+     <view class="distribute">系统评分
       <view class="stars">★★★★★ 4.6</view>
-    </view>
+    </view> 
     </view>
 </view>
-<view class="commentPage-category">
-  <block wx:for="{{categoryList}}" wx:key="">
-    <view class="category-item">{{item.text}}({{item.numb}})</view>
-  </block>
-</view>
+  <view class='comment'>
+    <view class='circle'></view>
+    <view class=''>{{comment1}}</view>
+  </view>
+  <view class='comment'>
+    <view class='circle'></view>
+    <view class=''>{{comment2}}</view>
+  </view>
+  <view class='comment'>
+    <view class='circle'></view>
+    <view class=''>{{comment3}}</view>
+  </view>
+     <view class="footer {{cost!=0?'active':''}}">
+      <view class="howMuch">
+        <view class="free" style='color:#BEBEBE'>说说你的看法～</view>
+      </view>
+      <view class="pay">发表评论</view>      
+    </view>
+
 </template>

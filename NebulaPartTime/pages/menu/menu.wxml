@@ -1,5 +1,6 @@
 <import src = "../common/orderPage.wxml"/>
 <import src = "../common/commentPage.wxml"/>
+<import src = "../common/merchantsPage.wxml"/>
 <view class="container" disable-scroll="true">
   <view class="header">
     <block wx:for="{{swiperTitle}}" wx:key="">
@@ -10,11 +11,13 @@
   <swiper class="swiper" current="{{currentPage}} 
   bindchange="turnTitle">
     <swiper-item id="orderPage">
-      <template is="orderPage" data="{{menu,selected,howMuch,cost,pullBar,content,src}}"/>
+      <template is="orderPage" data="{{salary1,salary2,content1,content2,content3,src}}"/>
     </swiper-item>
     <swiper-item id="commentPage">
-      <template is="commentPage" data="{{categoryList}}"/>
+      <template is="commentPage" data="{{comment1,comment2,comment3}}"/>
     </swiper-item>
-    <swiper-item id="restaurantPage"></swiper-item>
+    <swiper-item id="merchantsPage">
+      <template is="merchantsPage" data="{{merchants}}"/>
+    </swiper-item>
   </swiper>
 </view>

@@ -15,14 +15,19 @@ Page({
       text: "商家",
       id: 3
     }],
-    menu: [],
-    currentPage: 0,
-    selected: 0,
     howMuch: 12,
-    cost: 0,
-    pullBar: false,
-    content: "",
-    src:""
+    currentPage: 0,
+    salary1: "",
+    salary2: "",
+    content1: "",
+    content2: "",
+    content3: "",
+    comment1: "",
+    comment2: "",
+    comment3: "",
+    src:"",
+    merchants:"",
+
   },
   turnPage: function (e) {
     this.setData({
@@ -38,13 +43,22 @@ Page({
     }
   },
 
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.setData({
-      content: options.content,
-      src:options.src
+      salary1: options.salary1,
+      salary2: options.salary2,
+      content1: options.content1,
+      content2: options.content2,
+      content3: options.content3,
+      comment1: options.comment1,
+      comment2: options.comment2,
+      comment3: options.comment3,
+      src:options.src,
+      merchants: options.merchants
     })   
   },
 
