@@ -38,9 +38,9 @@
   margin-top: 20rpx;
 }
 .circle{
-  width: 10rpx;
-  height: 10rpx;
-  border-radius:10rpx;
+  width: 7rpx;
+  height: 7rpx;
+  border-radius:7rpx;
   border: 1rpx solid #b040ff; 
   margin-top: 20rpx;
   margin-right: 20rpx;
